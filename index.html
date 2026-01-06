@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Competitions | Economic Events</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <h1>ECONO-FEST 2026</h1>
+  <p>Ideas • Innovation • Impact</p>
+</header>
+
+
+<section class="events">
+
+  <!-- EVENT 1 -->
+  <div class="event-card">
+    <h2>Mock Shark Tank</h2>
+    <p>
+      Pitch your innovative startup ideas before expert judges and
+      compete for exciting prizes.
+    </p>
+    <button onclick="openForm('mock')">Register Now</button>
+  </div>
+
+  <!-- EVENT 2 -->
+  <div class="event-card">
+    <h2>Research Paper Presentation</h2>
+    <p>
+      Present your research work and gain academic exposure
+      at a national level.
+    </p>
+    <button onclick="openForm('research')">Register Now</button>
+  </div>
+
+</section>
+
+<!-- FORM SECTION -->
+<section id="formSection" class="hidden">
+  <h2>📋 Registration Form</h2>
+
+  <iframe id="formFrame"></iframe>
+
+  <a href="#patmentSection">
+    <button class="continue-btn" onclick="showPayment()">
+    I have submitted the form
+  </button>
+  </a>
+</section>
+
+<!-- PAYMENT SECTION -->
+<section id="paymentSection" class="hidden">
+  <h2>💳 Payment Details</h2>
+
+ <div class="qr-box">
+  <img id="qrImage" src="payment-qr.jpeg" alt="Payment QR Code">
+
+  <a href="payment-qr.jpeg" download="ECONO-FEST-PAYMENT-QR.png" class="download-btn">
+    ⬇️ Download QR
+  </a>
+</div>
+
+
+  <p class="note">
+    After completing payment, please join the official WhatsApp group
+    for further communication.
+  </p>
+
+  <a id="whatsappLink" href="#" class="whatsapp-btn" target="_blank">
+  Join WhatsApp Group
+  </a>
+
+</section>
+
+<footer>
+  <p>© 2026 College Economic Forum | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
