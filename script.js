@@ -6,10 +6,10 @@ function openForm(type) {
 
   if (type === "mock") {
     frame.src =
-      "https://docs.google.com/forms/d/e/1FAIpQLSfJYIVr8VRj2DvHRP3kxxqyHdignGcNpikvEyggT1Re1szC2Q/viewform?embedded=true";
+      "https://docs.google.com/forms/d/e/1FAIpQLSc8AURmsAdtzmXIWEkO9lI_XLAsd5p2IC9mj5uztxzTR7a3Tg/viewform?embedded=true";
   } else {
     frame.src =
-      "https://docs.google.com/forms/d/e/1FAIpQLSc8AURmsAdtzmXIWEkO9lI_XLAsd5p2IC9mj5uztxzTR7a3Tg/viewform?embedded=true";
+      "https://docs.google.com/forms/d/e/1FAIpQLSfJYIVr8VRj2DvHRP3kxxqyHdignGcNpikvEyggT1Re1szC2Q/viewform?embedded=true";
   }
 
   window.scrollTo({
@@ -77,4 +77,5 @@ function showPayment() {
     block: "start"
   });
 }
+
 
